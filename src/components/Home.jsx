@@ -19,10 +19,10 @@ const Home = () => {
     return (
         <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
 
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-                <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-7xl font-medium-500 text-white">Hello! My name is,</h2>
-                    <h2 className="text-4xl sm:text-7xl font-medium-500 text-white">Mitchell Schuldinger</h2>
+            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-1 md:flex-row">
+
+                <div className=" min-w-[70%] flex flex-col justify-center h-full">
+                    <h2 className="text-4xl sm:text-7xl font-medium-500 text-white">Hello! My name is,<br /> Mitchell Schuldinger</h2>
                     <h2 className="text-2xl sm:text-4xl text-gray-500 py-4 max-w-md">
                         I am a
                         <span className="text-blue-500 font-bold pl-2">
@@ -40,12 +40,15 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
+
                 </div>
 
-                <div>
+                <div className="min-w-[60%]">
                     <img src={HeroImage} alt="Me!" className="rounded-2xl mx-auto w-2/3 md:w-3/4" />
                 </div>
             </div>
+
+
         </div>
     )
 }
