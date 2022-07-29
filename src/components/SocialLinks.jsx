@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from "react-icons/hi"
-import { BsFillPersonBadgeFill } from "react-icons/bs"
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { BiCoffeeTogo } from 'react-icons/bi'
+import { BsFillPersonLinesFill } from "react-icons/bs"
 
 
 const SocialLinks = () => {
@@ -17,32 +17,44 @@ const SocialLinks = () => {
             href: 'https://linkedin.com',
             style: 'rounded-tr-md'
         },
-        {
+        {   
             id: 2,
             child: (
                 <>
-                    Linkedin <FaGithub size={30} />
+                    Github <FaGithub size={30} />
                 </>
             ),
             href: 'https://github.com',
+            
+            
         },
         {
             id: 3,
             child: (
                 <>
-                    Mail <HiOutlineMail size={30} />
+                    Instagram <FaInstagram size={30} />
                 </>
             ),
-            href: 'mailto:foo@gmail.com',
+            href: 'https://instagram.com',
         },
         {
             id: 4,
             child: (
                 <>
-                    Resume <BsFillPersonBadgeFill size={30} />
+                    Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
             href: 'https://linkedin.com',
+           
+        },
+        {
+            id: 5,
+            child:(
+                <>
+                    Coffee? < BiCoffeeTogo size={30} />
+                </>
+            ) ,
+            href: 'https://www.buymeacoffee.com/mitchellschul',
             style: 'rounded-br-md'
         },
     ]

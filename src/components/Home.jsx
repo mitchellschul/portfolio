@@ -21,18 +21,16 @@ const Home = () => {
 
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-1 md:flex-row">
 
-                <div className=" min-w-[70%] flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-7xl font-medium-500 text-white">Hello! My name is,<br /> Mitchell Schuldinger</h2>
-                    <h2 className="text-2xl sm:text-4xl text-gray-500 py-4 max-w-md">
-                        I am a
-                        <span className="text-blue-500 font-bold pl-2">
-                            {text}
-                        </span>
-                        <Cursor />
-                    </h2>
-
-
+                <div className="flex flex-col justify-center h-full w-max">
+                    <h2 className="text-2xl sm:text-7xl font-medium-500 text-white">Hello! My name is,<br /> Mitchell Schuldinger</h2>
                     <div>
+                        <h2 className="text-2xl sm:text-4xl text-gray-500 py-4 max-w-md">
+                            I am a
+                            <span className="text-blue-500 font-bold pl-2">
+                                {text}
+                            </span>
+                            <Cursor />
+                        </h2>
                         <Link to="portfolio" smooth duration={500} className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                             portfolio
                             <span className="group-hover:rotate-90 duration-300">

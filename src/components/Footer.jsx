@@ -1,68 +1,59 @@
 import React from 'react'
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from "react-icons/hi"
-import { BsFillPersonBadgeFill } from "react-icons/bs"
-
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { BiCoffeeTogo } from 'react-icons/bi'
 
 const Footer = () => {
 
-    const links = [
+    const icons = [
         {
             id: 1,
-            child: (
-                <>
-                    Linkedin <FaLinkedin size={30} />
-                </>
-            ),
+            icon: <FaLinkedin size={30} />,
             href: 'https://linkedin.com',
-            style: 'rounded-tr-md'
         },
         {
             id: 2,
-            child: (
-                <>
-                    Linkedin <FaGithub size={30} />
-                </>
-            ),
+            icon: <FaGithub size={30} />,
             href: 'https://github.com',
         },
         {
             id: 3,
-            child: (
-                <>
-                    Mail <HiOutlineMail size={30} />
-                </>
-            ),
-            href: 'mailto:foo@gmail.com',
+            icon: <FaInstagram size={30} />,
+            href: 'https://instagram.com',
         },
         {
             id: 4,
-            child: (
-                <>
-                    Resume <BsFillPersonBadgeFill size={30} />
-                </>
-            ),
+            icon: <BsFillPersonLinesFill size={30} />,
             href: 'https://linkedin.com',
-            style: 'rounded-br-md'
+        },
+        {
+            id: 5,
+            icon: < BiCoffeeTogo size={30} />,
+            href: 'https://www.buymeacoffee.com/mitchellschul',
         },
     ]
 
-  return (
-    <div className="text-center bg-gray-800 text-white" >
-        <div px-6 pt-6>
-            <div className="flex justify-center mb-6">
+    return (
+        <div className="text-center bg-gray-800 text-white" >
+            <div px-6 pt-6 flex flex-col>
 
-                {
-                    links.map((id, child, href, style) => (
-                        <a key={id} href={href} type="button" className="rounded-full border-2 border-white text-white uppercase hover:bg-black hover:bg-opacity-5 focous:outline-none transition duration-150 ease-in-out w-9 h-9 m-1">{child}</a>
-                    ))
-                }
+                <div className="flex justify-center pb-4">
 
+                    {
+                        icons.map(({ id, icon, href }) => (
+                            <a key={id} href={href} className="flex mx-5 text-white hover:scale-125 duration-200 target='_blank' rel='noreferrer'">{icon}</a>
+                        ))
+                    }
+
+                
+                </div>
+                <div className="pb-6 text-gray-500">
+                    &copy; {new Date().getFullYear()} Mitchell Schuldinger
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Footer

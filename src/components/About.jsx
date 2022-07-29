@@ -12,9 +12,13 @@ const About = () => {
                 </div>
 
                 <p className="text-xl mt-20" >
-                    Lorem Ips kasgdfhasdh askjhdf;askjhdfasdfjkhds
-                    asdfhljashdf
-                    asdfjhalsjkdfhakjsdhfjkh asdjkfhakldsf
+                Hello, thank you for checking out my website!
+                </p>
+
+                <br />
+
+                <p className="text-xl">
+                    I am in my third year at Michigan State University studying information science with a focus in human-centered technology, and a minor in computer science.
                 </p>
 
                 <br />
