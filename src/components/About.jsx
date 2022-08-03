@@ -18,7 +18,7 @@ const About = () => {
                 <br />
 
                 <p className="text-xl">
-                    I am in my third year at Michigan State University studying information science with a focus in human-centered technology, and a minor in computer science.
+                    I am in my third year at Michigan State University studying information science with a focus in human-centered technology, and a minor in computer science. I have always loved learing new tech
                 </p>
 
                 <br />

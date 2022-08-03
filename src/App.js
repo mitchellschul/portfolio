@@ -8,6 +8,18 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+
+
+
+  window.onfocus = function () {
+    document.title = "Mitchell Schuldinger";
+  }
+  window.onblur = function () {
+    document.title = "Wait, come back!";
+  }
+
+
+
   return (
     <div>
       <NavBar />

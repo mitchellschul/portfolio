@@ -42,11 +42,11 @@ const Footer = () => {
 
                     {
                         icons.map(({ id, icon, href }) => (
-                            <a key={id} href={href} className="flex mx-5 text-white hover:scale-125 duration-200 target='_blank' rel='noreferrer'">{icon}</a>
+                            <a key={id} href={href} className="flex mx-5 text-white hover:scale-125 duration-200" target='_blank' rel='noreferrer'>{icon}</a>
                         ))
                     }
 
-                
+
                 </div>
                 <div className="pb-6 text-gray-500">
                     &copy; {new Date().getFullYear()} Mitchell Schuldinger
