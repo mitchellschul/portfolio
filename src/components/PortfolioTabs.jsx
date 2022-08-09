@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import placeholder from '../assets/portfolio/placeholder.png';
-import accafellas from '../assets/portfolio/accafellas.png';
-import lakepointe from '../assets/portfolio/lakepointe.png'
+import placeholder from '../assets/images/portfolio/placeholder.png';
+import accafellas from '../assets/images/portfolio/accafellas.png';
+import lakepointe from '../assets/images/portfolio/lakepointe.png'
+import odenDash from '../assets/images/portfolio/odenDash.png';
 
 
 import AOS from 'aos';
@@ -27,12 +28,12 @@ const PortfolioTabs = () => {
         {
             id: 2,
             title: 'UI/UX',
-            projects: [placeholder, accafellas]
+            projects: [odenDash, accafellas]
         },
         {
             id: 3,
             title: 'Mobile',
-            projects: [placeholder, accafellas]
+            projects: [placeholder, placeholder]
         },
         {
             id: 4,
