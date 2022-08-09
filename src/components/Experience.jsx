@@ -1,14 +1,13 @@
 import React from 'react';
 
 
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import javascript from '../assets/javascript.png';
-import reactImg from '../assets/react.png';
-import nextjs from '../assets/nextjs.png';
-import gitlab from '../assets/gitlab.png';
-import github from '../assets/github.png';
-import tailwind from '../assets/tailwind.png';
+import html from '../assets/images/technologies/html.png';
+import css from '../assets/images/technologies/css.png';
+import javascript from '../assets/images/technologies/javascript.png';
+import reactImg from '../assets/images/technologies/react.png';
+import gitlab from '../assets/images/technologies/gitlab.png';
+import github from '../assets/images/technologies/github.png';
+import tailwind from '../assets/images/technologies/tailwind.png';
 
 const Experience = () => {
 
@@ -45,18 +44,12 @@ const Experience = () => {
         },
         {
             id: 6,
-            src: nextjs,
-            title: 'NextJs',
-            style: 'shadow-white'
-        },
-        {
-            id: 7,
             src: gitlab,
             title: 'GitLab',
             style: 'shadow-orange-600'
         },
         {
-            id: 8,
+            id: 7,
             src: github,
             title: 'GitHub',
             style: 'shadow-gray-400'
