@@ -32,7 +32,7 @@ const NavBar = () => {
     return (
         <div className="flex justify-between absolute items-center w-full h-20 px-4 text-browngray z-30">
             <div>
-                <h1 className="text-5xl ml-[100%] cursor-default">MS</h1>
+                <h1 className="text-5xl ml-[10%] cursor-default md:ml-[90%]">MS</h1>
             </div>
 
             <ul className="hidden md:flex ">

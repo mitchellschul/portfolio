@@ -74,6 +74,7 @@ const SideNav = () => {
 
 
             </ul>
+            <div className="md:fixed left-10 w-0.5 h-1/3 mt-[15%] bg-browngray"></div>
             {/* <div className="absolute left-1/2 -ml-0.5 w-0.5 h-screen bg-white"></div> */}
         </div>
 

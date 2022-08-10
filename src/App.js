@@ -49,7 +49,6 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-
       <SideLines />
       <SideNav />
 
