@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./components/Home";
-// import NavBar from "./components/NavBar";
-import SocialLinks from "./components/SocialLinks";
+import NavBar from "./components/NavBar";
+import SideNav from "./components/SideNav";
 import About from "./components/About";
 // import Portfolio from "./components/Portfolio";
 import PortfolioTabs from "./components/PortfolioTabs";
@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SideLines from "./components/SideLines";
+import PardonTheDust from "./components/PardonTheDust";
 
 
 function getFaviconEl() {
@@ -41,15 +42,18 @@ function App() {
 
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <Home />
       <About />
       <PortfolioTabs />
       <Experience />
       <Contact />
       <Footer />
+
       <SideLines />
-      <SocialLinks />
+      <SideNav />
+
+      <PardonTheDust />
 
     </div>
   );

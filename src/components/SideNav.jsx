@@ -1,10 +1,11 @@
 import React from 'react'
 import { BsLaptop, BsTelephone, BsFillFileEarmarkPersonFill, } from 'react-icons/bs'
 import { BiHomeAlt } from "react-icons/bi"
-import {BsFillFileCodeFill} from 'react-icons/bs'
+import { BsFillFileCodeFill } from 'react-icons/bs'
+import { Link } from "react-scroll";
 
 
-const SocialLinks = () => {
+const SideNav = () => {
 
     const links = [
         {
@@ -14,8 +15,7 @@ const SocialLinks = () => {
                     Home <BiHomeAlt size={30} />
                 </>
             ),
-            href: 'https://linkedin.com',
-            style: 'rounded-tr-md'
+            link: 'home',
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ const SocialLinks = () => {
                     About <BsFillFileEarmarkPersonFill size={30} />
                 </>
             ),
-            href: 'https://github.com',
+            link: 'about',
 
 
         },
@@ -35,7 +35,7 @@ const SocialLinks = () => {
                     Portfolio <BsLaptop size={30} />
                 </>
             ),
-            href: 'https://instagram.com',
+            link: 'portfolio',
         },
         {
             id: 4,
@@ -44,7 +44,7 @@ const SocialLinks = () => {
                     Skills <BsFillFileCodeFill size={30} />
                 </>
             ),
-            href: 'https://linkedin.com',
+            link: 'skills',
 
         },
         {
@@ -54,8 +54,7 @@ const SocialLinks = () => {
                     Contact < BsTelephone size={30} />
                 </>
             ),
-            href: 'https://www.buymeacoffee.com/mitchellschul',
-            style: 'rounded-br-md'
+            link: 'contact',
         },
     ]
 
@@ -65,12 +64,12 @@ const SocialLinks = () => {
         <div className="hidden lg:flex flex-col top-[39%] left-0 fixed">
             <ul>
 
-                {links.map(({ id, child, href, style }) => (
-                    <li key={id} className={"flex justify-between items-center w-40 h-14 px-3 ml-[-93px] hover:ml-[-0px] hover:rounded-md duration-300 "}>
-                        <a href={href} className="flex justify-between items-center w-full text-white" target='_blank' rel="noreferrer">
+                {links.map(({ id, child, link, }) => (
+                    <Link key={id} to={link} smooth duration={500} className={"flex justify-between items-center w-40 h-14 px-3 ml-[-93px] hover:ml-[-0px] hover:rounded-md duration-300 cursor-pointer"}>
+                        <div className="flex justify-between items-center w-full text-browngray">
                             {child}
-                        </a>
-                    </li>
+                        </div>
+                    </Link>
                 ))}
 
 
@@ -82,4 +81,4 @@ const SocialLinks = () => {
 
 }
 
-export default SocialLinks
+export default SideNav
