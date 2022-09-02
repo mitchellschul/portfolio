@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import React from 'react';
+// import { FaBars, FaTimes } from "react-icons/fa";
+// import { Link } from "react-scroll";
 
 const NavBar = () => {
 
-    const [nav, setNav] = useState(false);
+    // const [nav, setNav] = useState(false);
 
-    const links = [
-        {
-            id: 1,
-            link: 'home'
-        },
-        {
-            id: 2,
-            link: 'about'
-        },
-        {
-            id: 3,
-            link: 'portfolio'
-        },
-        {
-            id: 4,
-            link: 'experience'
-        },
-        {
-            id: 5,
-            link: 'contact'
-        },
-    ]
+    // const links = [
+    //     {
+    //         id: 1,
+    //         link: 'home'
+    //     },
+    //     {
+    //         id: 2,
+    //         link: 'about'
+    //     },
+    //     {
+    //         id: 3,
+    //         link: 'portfolio'
+    //     },
+    //     {
+    //         id: 4,
+    //         link: 'experience'
+    //     },
+    //     {
+    //         id: 5,
+    //         link: 'contact'
+    //     },
+    // ]
 
     return (
         <div className="flex justify-between absolute items-center w-full h-20 px-4 text-browngray z-30">
@@ -37,16 +37,16 @@ const NavBar = () => {
 
             <ul className="hidden md:flex ">
 
-                <li className="p-3 mr-4 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-greenleaf hover:border-greenleaf transition ease-in-out delay-100 hover:text-white border-2 border-y-2 rounded-md border-browngray ">
+                <li className="p-3 mr-4 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive transition hover:border-olive ease-in-out delay-100 hover:text-white border-2 border-y-2 rounded-md border-browngray ">
                     <a href="www.google.com">Download Resume</a>
                 </li>
-                <li className="p-3 mr-20 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-greenleaf hover:border-greenleaf hover:text-white border-2 border-y-2 rounded-md border-browngray">
-                    <a href="www.google.com">Buy Me a Coffee :)</a>
+                <li className="p-3 mr-20 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive hover:border-olive hover:text-white border-2 border-y-2 rounded-md border-browngray">
+                    <a href="https://www.buymeacoffee.com/mitchellschul" target="_blank" rel="noreferrer">Buy Me a Coffee :)</a>
                 </li>
 
             </ul>
 
-            <div
+            {/* <div
                 onClick={() => setNav(!nav)}
                 className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
             >
@@ -65,7 +65,7 @@ const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-            )}
+            )} */}
 
 
         </div>

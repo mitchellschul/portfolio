@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from "react-icons/bs"
 import { BiCoffeeTogo } from 'react-icons/bi'
 
 const Footer = () => {
@@ -24,35 +23,42 @@ const Footer = () => {
         },
         {
             id: 4,
-            icon: <BsFillPersonLinesFill size={30} />,
-            href: 'https://linkedin.com',
-        },
-        {
-            id: 5,
             icon: < BiCoffeeTogo size={30} />,
             href: 'https://www.buymeacoffee.com/mitchellschul',
         },
     ]
 
     return (
-        <div className="text-center bg-gray-800 text-white" >
-            <div px-6 pt-6 flex flex-col>
-
-                <div className="flex justify-center pb-4">
+        <>
+            <div className="hidden md:flex pb-5 pt-4 justify-between items-center w-full px-4 bg-tanly" >
+                <div className="flex justify-center">
 
                     {
                         icons.map(({ id, icon, href }) => (
-                            <a key={id} href={href} className="flex mx-5 text-white hover:scale-125 duration-200" target='_blank' rel='noreferrer'>{icon}</a>
+                            <a key={id} href={href} className="flex mx-5 text-browngray hover:text-gray-600 duration-300" target='_blank' rel='noreferrer'>{icon}</a>
                         ))
                     }
 
-
                 </div>
-                <div className="pb-6 text-gray-500">
+                <div className="text-browngray">
                     &copy; {new Date().getFullYear()} Mitchell Schuldinger
                 </div>
             </div>
-        </div>
+            <div className="flex flex-col relative md:hidden items-center w-full px-4 py-4 bg-browngray" >
+                <div className="flex justify-center">
+
+                    {
+                        icons.map(({ id, icon, href }) => (
+                            <a key={id} href={href} className="flex mx-5 text-tanly hover:scale-125 duration-200 hover:text-white" target='_blank' rel='noreferrer'>{icon}</a>
+                        ))
+                    }
+
+                </div>
+                <div className="text-tanly mt-3">
+                    &copy; {new Date().getFullYear()} Mitchell Schuldinger
+                </div>
+            </div>
+        </>
     )
 }
 
