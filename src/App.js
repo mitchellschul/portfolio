@@ -12,9 +12,9 @@ import Footer from "./components/Footer";
 // import PardonTheDust from "./components/PardonTheDust";
 import Progress from "./components/Progress";
 
+
+
 function App() {
-
-
 
   window.onfocus = function () {
     document.title = "Mitchell Schuldinger";

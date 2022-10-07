@@ -1,5 +1,5 @@
 import React from 'react'
-// import { FaHandPointUp } from 'react-icons/fa'
+import { FaArrowUp } from 'react-icons/fa'
 import { Link } from "react-scroll";
 
 const Progress = () => {
@@ -27,8 +27,10 @@ const Progress = () => {
     window.onload = calcScrollValue;
 
     return (
-        <div id='progress' className='flex fixed bottom-5 right-5 h-[70px] w-[70px] items-center text-center rounded-[50%] cursor-pointer z-[20]' >
-            <Link id='progressValue' to='home' smooth={true} duration={500} className='relative block h-[85%] w-[85%] bg-[#d7d7d7] rounded-[50%] ml-[8%] text-[#001a2e]'>
+        <div id='progress' className='flex fixed bottom-5 right-5 h-[70px] w-[70px] items-center text-center rounded-full cursor-pointer z-[20] hover:w-[200px] duration-300'>
+            <Link id='progressValue' to='home' smooth={true} duration={500} className='relative block h-[85%] w-[85%] bg-[#d7d7d7] rounded-full ml-[8%] text-[#001a2e] items-center'>
+                <FaArrowUp className="relative left-5 top-5 scale-150" />
+                <p className="relative left-12 text-sm opacity-0 hover:opacity-100 duration-100 hover:text-lg flex">Scroll To Top</p>
             </Link>
         </div >
     )

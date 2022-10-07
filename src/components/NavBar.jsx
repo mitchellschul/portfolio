@@ -35,12 +35,12 @@ const NavBar = () => {
                 <h1 className="text-5xl ml-[10%] cursor-default md:ml-[90%]">MS</h1>
             </div>
 
-            <ul className="hidden md:flex ">
+            <ul className="flex">
 
-                <li className="p-3 mr-4 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive transition hover:border-olive ease-in-out delay-100 hover:text-white border-2 border-y-2 rounded-md border-browngray ">
-                    <a href="www.google.com">Download Resume</a>
+                <li className="relative ml-4 mr-2 p-2 md:p-3 md:mr-4 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive transition hover:border-olive ease-in-out delay-100 hover:text-white border-2 border-y-2 rounded-md border-browngray ">
+                    <a href="MitchellSchuldingerResume.pdf" target="_blank">Resume</a>
                 </li>
-                <li className="p-3 mr-20 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive hover:border-olive hover:text-white border-2 border-y-2 rounded-md border-browngray">
+                <li className="hidden md:flex mr-2 p-2 md:p-3 md:mr-20 cursor-pointer capitalize font-medium text-browngray hover:scale-105 duration-200 hover:bg-olive hover:border-olive hover:text-white border-2 border-y-2 rounded-md border-browngray">
                     <a href="https://www.buymeacoffee.com/mitchellschul" target="_blank" rel="noreferrer">Buy Me a Coffee :)</a>
                 </li>
 

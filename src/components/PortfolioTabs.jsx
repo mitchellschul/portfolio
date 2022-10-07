@@ -5,13 +5,15 @@ import lakepointe from '../assets/images/portfolio/lakepointe.png'
 import odenDash from '../assets/images/portfolio/odenDash.png';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
 
 
 const PortfolioTabs = () => {
+
+
+
     const [openTab, setOpenTab] = React.useState(1);
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const PortfolioTabs = () => {
     const tabs = [
         {
             id: 1,
-            title: 'Web',
+            title: 'Web / Mobile Dev',
             projects: [accafellas, lakepointe, placeholder]
         },
         {
@@ -33,11 +35,6 @@ const PortfolioTabs = () => {
         },
         {
             id: 3,
-            title: 'Mobile',
-            projects: [placeholder]
-        },
-        {
-            id: 4,
             title: 'Other',
             projects: [placeholder]
         },

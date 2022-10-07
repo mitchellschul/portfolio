@@ -9,17 +9,17 @@ const Footer = () => {
         {
             id: 1,
             icon: <FaLinkedin size={30} />,
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/mitchell-schuldinger/',
         },
         {
             id: 2,
             icon: <FaGithub size={30} />,
-            href: 'https://github.com',
+            href: 'https://github.com/mitchellschul',
         },
         {
             id: 3,
             icon: <FaInstagram size={30} />,
-            href: 'https://instagram.com',
+            href: 'https://www.instagram.com/mitchell_schul/',
         },
         {
             id: 4,
@@ -35,7 +35,7 @@ const Footer = () => {
 
                     {
                         icons.map(({ id, icon, href }) => (
-                            <a key={id} href={href} className="flex mx-5 text-browngray hover:text-gray-600 duration-300" target='_blank' rel='noreferrer'>{icon}</a>
+                            <a key={id} href={href} className="flex mx-5 text-browngray hover:text-gray-600 hover:scale-125 duration-300 " target='_blank' rel='noreferrer'>{icon}</a>
                         ))
                     }
 
@@ -54,7 +54,7 @@ const Footer = () => {
                     }
 
                 </div>
-                <div className="text-tanly mt-3">
+                <div className="text-tanly mt-3 cursor-default">
                     &copy; {new Date().getFullYear()} Mitchell Schuldinger
                 </div>
             </div>
