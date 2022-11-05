@@ -49,7 +49,7 @@ const PortfolioTabs = () => {
                 <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                     <div className="pb-8 text-browngray">
                         <p className="text-4xl font-bold inline border-b-4 border-olive">Check out my work</p>
-                        {/* <p className="py-6">Check out my work</p> */}
+                        <p className="py-2">Portfilo is under construction</p>
                     </div>
                     <div className="flex flex-wrap align-center pt-8">
                         <div className="w-full">
@@ -89,7 +89,9 @@ const PortfolioTabs = () => {
                                         {
                                             tab.projects.map((project, index) => (
                                                 <div key={index} to='/aboutProject' className="shadow-md shadow-gray-600 rounded-lg ">
-                                                    <img src={project} alt="yagga" className="rounded-md duration-200 w-full h-full hover:scale-105 " />
+                                                    <a href="https://github.com/mitchellschul/projectRundown" target="_blank" rel="noopener noreferrer">
+                                                        <img src={project} alt="yagga" className="rounded-md duration-200 w-full h-full hover:scale-105 " />
+                                                    </a>
                                                 </div>
                                             ))
                                         }

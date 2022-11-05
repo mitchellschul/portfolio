@@ -25,9 +25,10 @@ function App() {
 
   return (
     <div>
-
+      {/* <PardonTheDust className='z-0' /> */}
       <Progress />
       <NavBar />
+
       {/* <BottomNav /> */}
       <Home />
       <About />
